@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/*
+*注册样式
+*2019/7/8
+*刘硕
+*/
+
+#loginback{
+    background-image: url(../image/loginbackground.png);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    //background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+ z-index: 0;
+}
+.loginpagecontainer{
+ width: 20%;
+	left: 40%;
+top: 100px;
+position:relative;
+}
+#logo{
+    height: 60px;
+    width: 310px;
+    background-image: url(../image/logo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+}
+#logincontainer{
+    top:80px;
+    width:100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(153, 153, 153);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255,0.702);
+    //opacity: 0.702;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    position: relative;
+    height: 340px;
+    z-index: 5;
+}
+.login_form{
+ width:80%;
+ height:70%;
+ left:10%;
+ top:15%;
+ position:relative;
+}
+.tab-content{
+    z-index: 10;
+    position: relative;
+    clear: both;
+    padding: 30px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    margin-top:10px;
+}
+.form-group{
+   margin-top:20px;
+   margin-bottom:15px;
+}
+.textbox{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(153, 153, 153);
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    left: 5%;
+    width: 75%;
+    height: 30px;
+    z-index: 6;
+}
+.check-input{
+    line-height: 27px;
+    left: 80px;
+    position:relative;
+}
+.check-input .default{
+    font-size: 14px;
+}
+.login-btn{
+    width: 100%;
+}

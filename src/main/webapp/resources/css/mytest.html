@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="Reset.css">
+<link rel="stylesheet"
+	href="bootstrap.css">
+<link rel="stylesheet"
+	href="style.css">
+	<link rel="stylesheet"
+	href="app.css">
+	<link rel="stylesheet"
+	href="stylelist.css">
+	<link rel="stylesheet"
+	href="MainStyle.css">
+   
+    <style type="text/css">
+    .middle-form{
+    width:60%;
+    margin-left:20%;
+    float:left;
+    }
+    .middle-form .form-line{
+        width: 100%;
+    height: 40px;
+    float: left;
+    margin-top: 20px;
+    }
+    .middle-form .form-line label{
+    max-width:unset;
+    float:left;
+        width: 64px;
+    }
+    .middle-form .form-line input{
+    max-width:unset;
+    width:280px;
+    height:30px;
+    margin-left:10px;
+    float:left;
+    }
+    .middle-form .form-line .file-upload-input{
+    width:80px;
+    cursor: pointer;
+    margin-left:10px;
+    float:left;
+	height:30px;
+    }
+    .form-line .form-line-btn{
+    	margin-left:20%;
+    }
+    .form-line .form-line-btn button{
+    background-color: rgb(204, 0, 0);
+    color:white;
+    }
+    /*.middle-header{
+        width: 100%;
+    height: 50px;
+    line-height: 50px;
+        border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgb(221, 221, 221);
+    }
+    .middle-header-content{
+    
+    margin-left: 20px;
+    float:left;
+    }
+    .middle-header img{
+    	height:12px;
+    	width:12px;
+    }
+    .middle-main-actions{
+        width: 100%;
+    height: 50px;
+    line-height: 50px;
+    }
+    .middle-main-actions .left-actions{
+    margin-left: 20px;
+    float:left;
+    }
+    .middle-main-actions .left-actions li{
+    margin-left: 10px;
+    float:left;
+    color:blue;
+    display:block;
+    }
+    .middle-main-actions .left-actions .chosen{
+    color:red;
+     border-bottom-style: solid;
+    border-width: 3px;
+    border-color: rgb(245, 31, 31);
+    }
+    .middle-main-actions .middle-main-btn{
+    border: 0px solid #f54c53 !important;
+  	background-color: rgb(0, 86, 153);
+    
+    }
+    .middle-main-actions .right-actions{
+    margin-right: 20px;
+    float:right;
+    }
+    .middle-list .table{
+    font-size:12px;
+    }
+    .middle-list .table input{
+    		padding: 8px;
+			line-height: 1.42857143;
+			vertical-align: top;
+			background-color: rgb(255, 255, 255);
+			border:0px;
+			width:100%;
+    }
+    .middle-list .table .table-th-name{
+    width:80px;
+    }
+    .middle-list .table .table-th-phone{
+    width:120px;
+    }
+    .middle-list .table .table-th-email{
+    width:180px;
+    }
+    .middle-list .table .btn-group img{
+     margin-left:12px;
+    }
+    .right-top-header img{
+    	height:12px;
+    	width:12px;
+    }
+    .right-new-header img{
+    	height:12px;
+    	width:12px;
+    }
+    .card-block{
+     padding:4px;
+    }
+    	.panel-heading{
+    	    float: left;
+    line-height: 31px;
+    width: 100%;
+    text-align: left;
+    	}
+    	.panel-heading li{
+    	float:left;
+    	margin-left:10px;
+    	}
+    	.pane-body{
+    	float:left;
+    	}
+		.table-res1ponsive tr:nth-child(odd) input{
+			padding: 8px;
+			line-height: 1.42857143;
+			vertical-align: top;
+			background-color: #f9f9f9;
+			border:0px;
+			box-sizing: content-box;
+		}
+		.table-responsive tr:nth-child(even) input{
+			padding: 8px;
+			line-height: 1.42857143;
+			vertical-align: top;
+			background-color: #fff;
+			border:0px;
+			box-sizing: content-box;
+		}*/
+	</style>
+<style>
+    
+</style>
+</head>
+<body class="grayback">
+	<nav class="header-nav" role="navigation">
+		<div class="header-container">
+			<div class="row">
+				<div class="col-sm-4 col-xs-12">
+					<div id="header-logo">
+					
+					<a href="${pageContext.request.contextPath }/">
+					<img id="logoimg" src="../image/logo.png"/></a>
+					</div>
+				</div>
+				<div class="col-xs-8 text-right" id="menu-header-right">
+					<ul>
+						<li class="btn-cta"><a
+							href="${pageContext.request.contextPath }/login" id="loginbtn">2019-06-17  星期一  15：02</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="left-side-bar .side-fixed">
+		<div class="left-person-info">
+			<div class="person-head"><img id="headimg" src="../image/logo.png"/></div>
+		   <div class="person-btn">
+		   <p>余倩</p>
+			   <div class="person-btn-icons">
+				    <a><img class="person-btn-icon" src="../image/个人信息设置按钮.png"/></a>
+				    <a><img class="person-btn-icon" src="../image/个人信息注销按钮.png"/></a>
+			   </div>
+		   </div>
+		</div>
+		<div class="left-bar-list">
+		<nav class="drawer-main">
+            <ul class="nav nav-drawer">
+                <li class="nav-item">
+                    <a href="index.html"><img class="left-list-icon" src="../image/lefticon1.png"/></i> 我的待办任务</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="frontend_home.html"><img class="left-list-icon" src="../image/lefticon2.png"/>我的已办任务</a>
+                </li> 
+                <li class="nav-item">
+                    <a href="frontend_home.html"><img class="left-list-icon" src="../image/lefticon2.png"/>提醒消息</a>
+                </li>
+                <li class="nav-item">
+                    <a href="frontend_home.html"><img class="left-list-icon" src="../image/lefticon3.png"/>我的周报</a>
+                </li>
+                <li class="nav-item">
+                    <a href="frontend_home.html"><img class="left-list-icon" src="../image/lefticon4.png"/>我的日志</a>
+                </li>
+                <li class="nav-item">
+                    <a href="frontend_home.html"><img class="left-list-icon" src="../image/lefticon5.png"/>我的项目</a>
+                </li>
+                <li class="nav-item">
+                    <a href="frontend_home.html"><img class="left-list-icon" src="../image/lefticon6.png"/>我的查封资产</a>
+                </li>
+            </ul>
+        </nav>
+		</div>
+		</div>
+	<div class="middle-main">
+	<div class="middle-list">
+		<div class="middle-header">
+		<div class="middle-header-content"><img class="left-list-icon" src="../image/middletopheadericon.png"/>
+			个人信息
+		</div>
+		</div>
+		<div class="middle-form">
+		<form name="detailForm"
+					method="POST"
+					action="${pageContext.request.contextPath }/Requirement/AddRequirement_Details"
+					commandName="Details">
+					<div >
+						<div class="form-line">
+							<label for="headpicpath">头像修改</label>
+							<input id="upload" name="file" accept="image/*" type="file"  style="visible:hidden;display:none"/>
+							<input class="form-control"
+								type="text" id="headpicpath" name="headpicpath" placeholder="请选择上传路径">
+								<img id="picb" src="../image/uploadbtn.png" class="file-upload-input" />
+						</div>
+						<div class="form-line">
+							<label for="password">密码修改</label> <input class="form-control"
+								type="text" id="password" name="password" placeholder="请输入新的密码">
+						</div>
+						<div class="form-line">
+							<label for="repassword"></label> <input class="form-control"
+								type="text" id="repassword" name="repassword" placeholder="请再次输入新的密码">
+						</div>
+						<div class="form-line">
+							<label for="phone">手机号码</label> <input class="form-control"
+								type="text" id="phone" name="phone" placeholder="请输入新的手机号码">
+						</div>
+						<div class="form-line">
+							<label for="email">电子邮箱</label> <input class="form-control"
+								type="text" id="email" name="email" placeholder="请输入新的电子邮箱">
+						</div>
+					</div>
+					<div class="form-line">
+						<div class="form-line-btn">
+							<button class="btn btn-app-teal" type="submit">提交</button>
+						</div>
+					</div>
+				</form>
+		</div>
+	   <div class="card-block">
+            
+       </div>
+	</div>
+	</div>
+	<div class="right-side-bar .side-fixed">
+		<div class="right-top-bar">
+			<div class="right-top-header"><img class="left-list-icon" src="../image/righttopheadericon.png"/>
+			我的应用
+			</div>
+			<div>
+			  <!--  <c:forEach var="i" begin="11" end="1" step="-1">
+                <a class="card" href="javascript:void(0)">
+                    <div class="text-center">
+                        <img class="button-img" src="../image/topbutton${i}.png" alt="">
+                        <p>Graphic Designer</p>
+                    </div>
+                </a>
+                </c:forEach>-->
+            </div>
+            <a class="card" href="javascript:void(0)">
+                    <div class="text-center">
+                        <img class="button-img" src="../image/topbutton11.png" alt="">
+                        <p>客户管理</p>
+                    </div>
+                </a>
+                <a class="card" href="javascript:void(0)">
+                    <div class="text-center">
+                        <img class="button-img" src="../image/topbutton10.png" alt="">
+                        <p>项目管理</p>
+                    </div>
+                </a>
+                <a class="card" href="javascript:void(0)">
+                    <div class="text-center">
+                        <img class="button-img" src="../image/topbutton9.png" alt="">
+                        <p>用户管理</p>
+                    </div>
+                </a>
+                <a class="card" href="javascript:void(0)">
+                    <div class="text-center">
+                        <img class="button-img" src="../image/topbutton8.png" alt="">
+                        <p>团队周报</p>
+                    </div>
+                </a>
+                <a class="card" href="javascript:void(0)">
+                    <div class="text-center">
+                        <img class="button-img" src="../image/topbutton7.png" alt="">
+                        <p>公司周报</p>
+                    </div>
+                </a>
+                <a class="card" href="javascript:void(0)">
+                    <div class="text-center">
+                        <img class="button-img" src="../image/topbutton6.png" alt="">
+                        <p>团队项目</p>
+                    </div>
+                </a>
+                <a class="card" href="javascript:void(0)">
+                    <div class="text-center">
+                        <img class="button-img" src="../image/topbutton5.png" alt="">
+                        <p>公司项目</p>
+                    </div>
+                </a>
+                <a class="card" href="javascript:void(0)">
+                    <div class="text-center">
+                        <img class="button-img" src="../image/topbutton4.png" alt="">
+                        <p>团队查封资产项目</p>
+                    </div>
+                </a>
+                <a class="card" href="javascript:void(0)">
+                    <div class="text-center">
+                        <img class="button-img" src="../image/topbutton3.png" alt="">
+                        <p>公司查封资产项目</p>
+                    </div>
+                </a>
+                <a class="card" href="javascript:void(0)">
+                    <div class="text-center">
+                        <img class="button-img" src="../image/topbutton2.png" alt="">
+                        <p>统计</p>
+                    </div>
+                </a>
+                <a class="card" href="javascript:void(0)">
+                    <div class="text-center">
+                        <img class="button-img" src="../image/topbutton1.png" alt="">
+                        <p>通讯录</p>
+                    </div>
+                </a>
+                <a class="card" href="javascript:void(0)">
+                </a>
+         </div>
+	    <div class="right-side-new">
+	    	<div class="right-new-header"><img class="left-list-icon" src="../image/rightbottomheadericon.png"/>
+			公告
+			</div>
+			<div>
+			 <ul>
+			  <li><span class="brief-new">针对办公文案规范范文公告</span><span class="new-time">2019-06-17</span></li>
+			  <li><span class="brief-new">针对办公文案规范范文公告</span><span class="new-time">2019-06-17</span></li>
+			  <li><span class="brief-new">针对办公文案规范范文公告</span><span class="new-time">2019-06-17</span></li>
+			  <li><span class="brief-new">针对办公文案规范范文公告</span><span class="new-time">2019-06-17</span></li>
+			  <li><span class="brief-new">针对办公文案规范范文公告</span><span class="new-time">2019-06-17</span></li>
+			 </ul>
+			</div>
+	    </div>
+	</div>
+	<div id="add-form" class="modal fade" tabindex="-1" role="dialog">
+		<div class="card modal-dialog modal-dialog-top">
+			<div class="card-header bg-teal bg-inverse">
+				<h4>添加需求</h4>
+			</div>
+			<div class="card-block" style="overflow: auto; max-height: 600px;">
+
+				<form class="form-horizontal m-t-xs" name="detailForm"
+					method="POST"
+					action="${pageContext.request.contextPath }/Requirement/AddRequirement_Details"
+					commandName="Details">
+					<div class="form-group">
+						<div class="col-xs-12">
+							<label for="name">需求名称</label> <input class="form-control"
+								type="text" id="name" name="name" placeholder="需求名称">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-xs-6">
+							<label for="father_project">所属项目</label> <input
+								class="form-control" type="text" id="father_project"
+								name="father_project" placeholder="需求名称">
+						</div>
+						<div class="col-xs-6">
+							<label for="task_type">任务类型</label>
+							<form:select path="task_type" data-placeholder="Type 'C' to view"
+								class="form-control" tabindex="10">
+								<form:option value="" label="" />
+								<form:options items="${taskList}" />
+							</form:select>
+						</div>
+						<div class="col-xs-6">
+							<label for="responsive_user">任务负责人</label>
+							<form:select path="responsive_user" class="form-control"
+								tabindex="10">
+								<form:option value="" label="" />
+							</form:select>
+						</div>
+						<div class="col-xs-6">
+							<label for="need_priority">优先级</label>
+							<form:select path="need_priority" class="form-control"
+								tabindex="10">
+								<form:option value="" label="" />
+								<form:options items="${priorityList}" />
+							</form:select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-xs-12" for="content">任务描述</label>
+						<div class="col-xs-12">
+							<textarea class="form-control" id="content" name="content"
+								rows="7" placeholder="任务描述"></textarea>
+						</div>
+					</div>
+					<button id="btn1" type="button"
+						style="background: none; border: none;">
+						<i class="ion-chevron-down"></i>更多选项
+					</button>
+					<div id="heihei" class="form-group">
+						<div class="col-xs-6">
+							<label for="need_priority">所属迭代</label>
+							<form:select path="need_priority" class="form-control"
+								tabindex="10">
+								<form:option value="" label="" />
+							</form:select>
+						</div>
+						<div class="col-xs-6">
+							<label for="deadline">截止时间</label> <input id="deadline"
+								name="deadline" class="js-datepicker form-control" type="text"
+								data-date-format="dd-mm-yyyy" placeholder="dd-mm-yyyy">
+						</div>
+						<div class="col-xs-6">
+							<label for="begin_time">开始时间</label> <input id="begin_time"
+								name="begin_time" class="js-datepicker form-control" type="text"
+								data-date-format="dd-mm-yyyy" placeholder="dd-mm-yyyy">
+						</div>
+						<div class="col-xs-6">
+							<label for="need_priority">需求来源</label>
+							<form:select path="need_priority" class="form-control"
+								tabindex="10">
+								<form:option value="" label="" />
+								<form:options items="${userList}" />
+							</form:select>
+						</div>
+						<div class="col-xs-6">
+							<label for="need_priority">需求类型</label>
+							<form:select path="need_priority" class="form-control"
+								tabindex="10">
+								<form:option value="" label="" />
+								<form:options items="${needList}" />
+							</form:select>
+						</div>
+					</div>
+					<div class="form-group m-b-0">
+						<div class="col-xs-12">
+							<button class="btn btn-app-teal" type="submit">添加需求</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- .card-block -->
+		</div>
+	</div>
+	<script
+			src="../js/core/jquery.min.js"></script>
+			<script type="text/javascript">
+		$(function () {
+			$("#picb").click(function () {
+				$("#upload").click(); //隐藏了input:file样式后，点击头像就可以本地上传
+				
+				$("#upload").on("change", function () {
+					var objUrl = getObjectURL(this.files[0]); //获取图片的路径，该路径不是图片在本地的路径
+
+					if (objUrl) {
+						$("#headpicpath").val(objUrl);			//显示图片路径
+						//$("#pic").attr("src", objUrl); //将图片路径存入src中，显示出图片
+					}
+				});
+			});
+		});
+		//建立一個可存取到該file的url
+		function getObjectURL(file) {
+			var url = null;
+			if (window.createObjectURL != undefined) { //basic
+				url = window.createObjectURL(file);
+			} else if (window.URL != undefined) { //mozilla(firefox) 
+				url = window.URL.createObjectURL(file);
+			} else if (window.webkitURL != undefined) { //webkit or chrome
+				url = window.webkitURL.createObjectURL(file);
+			}
+			return url;
+		}
+	</script>
+		<script
+			src="../js/core/bootstrap.min.js"></script>
+		
+</body>
+</html>

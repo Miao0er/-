@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 用以生成数据库表对应的mybatis文件.xml,dao,model -->
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <context id="context1">
+    <jdbcConnection connectionURL="jdbc:mysql://localhost:3306/summer?useSSL=false&amp;serverTimezone=GMT" driverClass="com.mysql.jdbc.Driver" password="123456" userId="root" />
+    <javaModelGenerator targetPackage="nju.sofware.data.dataobject" targetProject="sofware\src\main\Java" />
+    <sqlMapGenerator targetPackage="mapper" targetProject="sofware\src\main\resources" />
+    <javaClientGenerator targetPackage="nju.sofware.data.dao" targetProject="sofware\src\main\Java" type="XMLMAPPER" />
+    <table schema="summer" tableName="ucustomer">
+      <columnOverride column="customerid" property="customerid" />
+      <columnOverride column="customerbriefname" property="customerbriefname" />
+      <columnOverride column="customerfullname" property="customerfullname" />
+    </table>
+  </context>
+</generatorConfiguration>

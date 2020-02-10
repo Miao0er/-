@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/main/Java/nju/sofware/web/LoginController.java=GBK
+encoding//src/main/resources/log4j.properties=UTF-8
+encoding//src/main/webapp/WEB-INF/views/Error.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/Login.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/MainTemplate.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/ManageUser.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/ManageUserAccount.jsp=UTF-8
+encoding//src/main/webapp/resources/css/bootstrap.css=UTF-8
+encoding//src/main/webapp/resources/css/style.css=UTF-8
